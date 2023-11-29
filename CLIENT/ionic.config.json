@@ -1,0 +1,8 @@
+{
+  "name": "Safe Ship Navigation",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "8360ceeb"
+}

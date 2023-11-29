@@ -1,0 +1,12 @@
+.home-action-button {
+  margin: 10px;
+}
+
+ion-fab-button {
+  --border-radius: 10px;
+  --background: #f7f7f6;
+  --background-activated: #f7f7f6;
+  --background-hover: #f7f7f6;
+  --background-activated-hover: #f7f7f6;
+  --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

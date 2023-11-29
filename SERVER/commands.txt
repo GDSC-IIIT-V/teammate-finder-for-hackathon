@@ -1,0 +1,14 @@
+#first instll virtualenv
+pip install virtualenv
+
+#Creation of virt:
+python3 -m virtualenv venv
+
+#Go into the virtualenv ur current directory is SERVER
+. venv/bin/activate
+
+#Install requirements:
+pip install -r requirements.txt
+
+#run the application
+python3 main.py

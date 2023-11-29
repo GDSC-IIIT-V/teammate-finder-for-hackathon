@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Safe Ship Navigation",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}

@@ -1,0 +1,109 @@
+.blur__background{
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px); /* For Safari */
+    overflow-y: clip;
+}
+
+.ol-map {
+    min-width: 600px;
+    min-height: 500px;
+}
+
+.ol-control {
+    position: absolute;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 4px;
+    padding: 2px;
+}
+.popup{
+    position: absolute; 
+    background-color: white;
+    padding:5px;
+    border-radius:10px;
+    border:1px solid black; 
+    bottom:12px;
+    left:-50px;
+    min-width:280px;
+    color: black;
+}
+.popup .popup-text{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px;
+    padding: 0px;
+}
+
+.cord-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.bottom-container {
+    margin-inline: 10px;
+}
+
+.subtitle {
+    font-size: var(--font-size-large);
+}
+
+.text {
+    font-size: var(--font-size-medium);
+}
+
+.chkbx-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.chkbx {
+    margin-right: 10px;
+}
+
+.input {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.divider {
+    margin-top: 15px;
+    border-top: 1px solid #e1e1e1;
+}
+
+.inline-title {
+    font-size: var(--font-size-xlarge);
+    font-weight: 600;
+}
+
+.title {
+    font-size: var(--font-size-xlarge);
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 40%;
+    height: 30px;
+    border-radius: 5px;
+    align-self: center;
+}
+
+.subcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.router__buttons__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -1,0 +1,44 @@
+version: '3'
+services:
+  postgres:
+    container_name: postgis-container
+    image: postgis/postgis:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin123
+      POSTGRES_DB: isro_postgis
+    ports:
+      - "5432:5432"
+    networks:
+      - ISRO-NETWORK
+    volumes:
+      - postgis_data:/var/lib/postgresql/data
+      
+  server:
+    container_name: server
+    image: ssn-server
+    build: ./SERVER/
+    ports:
+      - "5000:5000"
+    depends_on:
+      - postgres
+    networks:
+      - ISRO-NETWORK
+
+  client:
+    container_name: client
+    image: ssn-ui
+    build: ./CLIENT/
+    ports:
+      - "80:80"
+    depends_on:
+      - server
+    networks:
+      - ISRO-NETWORK
+
+volumes:
+  postgis_data:
+
+networks:
+  ISRO-NETWORK:
+
